@@ -124,7 +124,7 @@ class Parser
     // opera doesn't follow this convention though...
     if (isset($cl->os) && $cl->os->name === 'Android'
       && stristr($ua, 'Mobile') !== false
-      && stristr($ua, 'Opera') !== false)
+      && stristr($ua, 'Opera') === false)
       $cl->device->isTablet = true;
     
     // record if this is a spider

@@ -4,10 +4,10 @@ Example:
 ```php
 <?php
 
-require 'lib/parser.php';
+require 'src/parser.php';
 
 // update parser id you want to:
-// notw: this may take a while. not recommended at server-side!
+// this may take a while. not recommended at server-side!
 ua_parser\Parser::update();
 
 $parser = new ua_parser\Parser;

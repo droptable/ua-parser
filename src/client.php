@@ -40,7 +40,7 @@ class Client implements JsonSerializable
    */
   public function toJSON()
   {
-    return json_encode($this->data);
+    return json_encode($this);
   }
   
   /**

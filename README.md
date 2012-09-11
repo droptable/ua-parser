@@ -6,10 +6,6 @@ Example:
 
 require 'src/parser.php';
 
-// update parser id you want to:
-// this may take a while. not recommended at server-side!
-ua_parser\Parser::update();
-
 $parser = new ua_parser\Parser;
 $client = $parser->parse('User-Agent string here');
 
